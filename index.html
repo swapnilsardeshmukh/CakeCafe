@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>FashionClub</title>
+  <title>CakeCafe</title>
+  <link rel="icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900|Ubuntu:400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
@@ -18,7 +19,7 @@
       <!-- Nav Bar -->
 
       <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#">FashionClub</a>
+        <a class="navbar-brand" href="#">CakeCafe</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -26,13 +27,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#footer">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#pricing">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Download</a>
+              <a class="nav-link" href="#cta">Download</a>
             </li>
           </ul>
         </div>
@@ -42,13 +43,13 @@
 
       <div class="row">
         <div class="col-lg-6">
-          <h1>See new and interesting fashions and offers.</h1>
+          <h1>See new and interesting cakes and pastries.</h1>
           <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
           <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
         </div>
         <!-- Image -->
         <div class="col-lg-6">
-          <img class="title-image" src="images/iphone6.png" alt="iphone-mockup">
+          <img class="title-image" src="images/cake.jpg" alt="iphone-mockup">
         </div>
       </div>
     </div>
@@ -70,7 +71,7 @@
       <div class="col-lg-4 feature-box">
         <i class="fas fa-bullseye fa-4x icon"></i>
         <h3>Elite Clientel</h3>
-        <p>We have all new fashion trends, the greatest sarees.</p>
+        <p>We have all new trends, the greatest cakes.</p>
 
       </div>
 
@@ -93,13 +94,30 @@
 
   <section id="testimonials">
 
-    <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
-    <img src="images/dog-img.jpg" alt="dog-profile">
-    <em>Pebbles, New York</em>
+    <div id="testimonial-carousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2>"We absolutely loved the cake! So many people complimented both the look and taste! The flavors were perfect and I am so happy that we went with the cake! Thank you for making such a beautiful and delicious cake"</h2>
+          <img class="testmonial-image" src="images/dog-img.jpg" alt="dog-profile">
+          <em>Pebbles, New York</em>
 
-    <!-- <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
-    <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
-    <em>Beverly, Illinois</em> -->
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">"We just wanted to say thank you for making our wedding cake& for delivering it all the way to Half Moon Bay! It was the best cake ever. It was beautiful and it tasted great! Everyone loved it and was fighting for the last piece. We will recommend you to all of our friends.Thank you so much"</h2>
+          <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+          <em>Beverly, Illinois</em>
+
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+
+      </a>
+      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
 
   </section>
 
@@ -107,10 +125,10 @@
   <!-- Press -->
 
   <section id="press">
-    <img src="images/techcrunch.png" alt="tc-logo">
-    <img src="images/tnw.png" alt="tnw-logo">
-    <img src="images/bizinsider.png" alt="biz-insider-logo">
-    <img src="images/mashable.png" alt="mashable-logo">
+    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
 
   </section>
 
@@ -119,33 +137,63 @@
 
   <section id="pricing">
 
-    <h2>A Plan for Every Dog's Needs</h2>
+    <h2>A Plan for Every Customer's Needs</h2>
     <p>Simple and affordable price plans for your and your dog.</p>
 
+<div class="row">
+  <div class="col-lg-4 col-md-6 pricing-column">
+    <div class="card">
+      <div class="card-header">
+        <h3>Chihuahua</h3>
+      </div>
+      <div class="card-body">
+        <h2>Free</h2>
+        <p>2 Pastries on Independence Day</p>
+        <p>1 Cake at 40% off</p>
+        <p>Unlimited App Usage</p>
+        <button class="btn btn-lg btn-block btn-outline-dark" type="button">Sign Up</button>
+      </div>
+        </div>
+      </div>
 
-    <h3>Chihuahua</h3>
-    <h2>Free</h2>
-    <p>5 Matches Per Day</p>
-    <p>10 Messages Per Day</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
+  <div class="pricing-column col-lg-4 col-md-6">
+    <div class="card">
+      <div class="card-header">
+        <h3>Monthly</h3>
+      </div>
+      <div class="card-body">
+        <h2>$49 / mo</h2>
+        <p>Chihuahua offers</p>
+        <p>2 Cakes 50% off</p>
+        <p>Unlimited App Usage</p>
+        <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button>
+      </div>
+      </div>
+</div>
+
+  <div class="col-lg-4 col-md-12 pricing-column">
+    <div class="card">
+      <div class="card-header">
+        <h3>Yearly</h3>
+      </div>
+      <div class="card-body">
+
+        <h2>$99 / mo</h2>
+        <p>Monthly offers</p>
+        <p>4 cakes 45% off</p>
+        <p>Free Birthday Cake on Customers Birthday</p>
+        <p>Unlimited App Usage</p>
+        <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button>
+
+      </div>
+    </div>
+  </div>
+</div>
 
 
-    <h3>Labrador</h3>
-    <h2>$49 / mo</h2>
-    <p>Unlimited Matches</p>
-    <p>Unlimited Messages</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
 
 
-    <h3>Mastiff</h3>
-    <h2>$99 / mo</h2>
-    <p>Pirority Listing</p>
-    <p>Unlimited Matches</p>
-    <p>Unlimited Messages</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
+
 
   </section>
 
@@ -154,9 +202,9 @@
 
   <section id="cta">
 
-    <h3>Find the True Love of Your Dog's Life Today.</h3>
-    <button type="button">Download</button>
-    <button type="button">Download</button>
+    <h3 class="cta-heading">Find the Cakes and Sweets of Your Choice.</h3>
+    <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+    <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
 
   </section>
 
@@ -165,7 +213,17 @@
 
   <footer id="footer">
 
-    <p>© Copyright 2018 TinDog</p>
+
+<h3>You can Contact and Connect to us:</h3>
+
+<a class="footer-link" href="https://www.facebook.com/swapnilsardeshmukh"><i class="social-icon fab fa-facebook-f" title="facebook"></i> </a>
+  <a class="footer-link" href="https://github.com/swapnilsardeshmukh"><i class="social-icon fab fa-github" title="Github"></i> </a>
+    <a class="footer-link" href="https://www.instagram.com/naturevibes______/?hl=en"><i class="social-icon fab fa-instagram" title="instagram"></i> </a>
+    <a class="footer-link" href="mailto:sardeshmukhswapnil@gmail.com"><i class="social-icon fab fa-envelope" title="Mail us"></i></a>
+    <br>
+<a style="text-decoration: none; color: #212121;"  href="#Top">Go to Top</a>
+
+    <p>© Copyright 2020 Swapnil Sardeshmukh</p>
 
   </footer>
 
